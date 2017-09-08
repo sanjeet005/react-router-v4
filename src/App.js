@@ -36,11 +36,13 @@ class Form extends React.Component{
     return (
       <div>
        <Prompt when={this.state.isChanged} message="Are you sure you want to leave?" />
-        <input onChange={() => {
-          this.setState({
-            isChanged:true
-          })
-        }} type="text" />
+        <input
+          onChange={() => {
+            this.setState({
+              isChanged:true
+            })
+          }} 
+          type="text" />
       </div>
     )
   }
